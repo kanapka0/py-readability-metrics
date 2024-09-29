@@ -8,7 +8,7 @@ class Readability:
         self._analyzer = Analyzer()
         self._statistics = self._analyzer.analyze(text)
         self._min_words = min_words
-        if self._min_words < 100:
+        if self._min_words < 1:
             warnings.warn(
                 "Documents with fewer than 100 words may affect the accuracy of readability tests"
             )
